@@ -95,8 +95,7 @@ public class AugmentedImageActivity extends AppCompatActivity {
         case TRACKING:
           // Have to switch to UI Thread to update View.
           fitToScanView.setVisibility(View.GONE);
-          String newtext1 = "Trying to scan the image ";
-          SnackbarHelper.getInstance().showMessage(this, newtext1);
+
 
           // Create a new anchor for newly found images.
           if (!augmentedImageMap.containsKey(augmentedImage)) {
